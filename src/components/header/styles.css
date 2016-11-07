@@ -1,0 +1,16 @@
+.nav_u{
+	border-radius: 0px;
+}
+.pullright{
+margin-right: 0px;
+}
+
+.count{
+display: inline-block;
+background-color: white;
+border-radius: 7px;
+color:red;
+width:1em;
+font-size: 14px;
+padding-left: 3px;
+}

@@ -1,0 +1,15 @@
+.editable_container{
+	margin:0.3em;
+	padding:1em;
+	background-color: #CCCCCC;
+	font-size: 11px;
+}
+
+.title_table{
+	text-align: center;
+    color: white;
+    background-color: #289ebe;
+    font-size: 1.8em;
+    font-style: normal;
+    border: 1px solid #289ebe;
+}
