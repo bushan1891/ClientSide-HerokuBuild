@@ -22,24 +22,24 @@ class SideBar extends Component{
 	render(){
 		return(
 			<div className={styles.side_container}>
-			<h2 className={styles.module_heading}>Table</h2>
+			<h2 className={styles.module_heading}>WBS-MODULES</h2>
 			<ul className={styles.side_list}>
-				<li className={styles.item}><Link to="/table/create">Create Table</Link></li>
-				<li className={styles.item}><Link to="/table/view">View Table</Link></li>
+				<li className={styles.item}><Link to="/table/create">Create New WBS</Link></li>
+				<li className={styles.item}><Link to="/table/view">View WBS</Link></li>
 			</ul>
-			<h2 className={styles.module_heading}>Cart</h2>
+			<h2 className={styles.module_heading}>SELECTIONS</h2>
 			<ul className={styles.side_list}>
-				<li className={styles.item}><Link to="/cart">Cart Item</Link>
+				<li className={styles.item}><Link to="/cart">Selected Modules</Link>
 				{this.renderCartCount()}
 				</li>
-				<li className={styles.item}><Link to="/view_template">View Template</Link></li>
+				<li className={styles.item}><Link to="/view_template">Saved WBS Module</Link></li>
 			</ul>
-			<h2 className={styles.module_heading}>Account</h2>
+			<h2 className={styles.module_heading}>CUSTOMER</h2>
 			<ul className={styles.side_list}>
-				<li className={styles.item}><Link to="/account">Account</Link></li>
-				<li className={styles.item}><Link to="/view_account">View Account</Link></li>
+				<li className={styles.item}><Link to="/account">Create Customer</Link></li>
+				<li className={styles.item}><Link to="/view_account">View Customer</Link></li>
 			</ul>
-			<h2 className={styles.module_heading}>Collaboration</h2>
+			<h2 className={styles.module_heading}>COLLABARATION</h2>
 			<ul className={styles.side_list}>
 				<li className={styles.item}><Link to="/collabaration">CreateRoom</Link></li>
 				<li className={styles.item}><Link to="/joinroom">JoinRoom</Link></li>

@@ -51,7 +51,7 @@ export function* createTemplate(action) {
 
 	   // construct the template json
 		if(!(_.isEmpty(table))){
-				
+			var found=0;
 				cart.forEach(function(item){
 					
 					for(var x in table){
@@ -59,17 +59,17 @@ export function* createTemplate(action) {
 						const str2 = item._id;
 						if(str1 == str2){
 							console.log(str1,' same',str2 );
-
+							found++;
 						}
-						else if (!(str1 == str2) ){
+						else if ((!(str1 == str2))&& (found!=cart.length) ){
 							console.log(str1,' not same',str2);
 							otherItem.push(table[x]);
 						}
 					}
 
 				})
-			console.log(otherItem);
-			
+		console.log('before applying uniqe',otherItem);
+
 		}
 		else{
 				alert('Tables not found');

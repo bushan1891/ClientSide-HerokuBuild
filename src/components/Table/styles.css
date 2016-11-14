@@ -11,7 +11,12 @@ text-decoration: none;
 padding:.2em;
 margin-left: .4em;
 color:white;
-font-weight: 100;
+font-weight: 300;
+padding: 5px;
+}
+.item:hover{
+  color:gray;
+  font-weight: 500;
 }
 
 a{
@@ -32,7 +37,7 @@ a:hover{
     border-radius: .3em;
     color: #373a3c;
     font-size: 14px;
-    font-weight: 100;
+    font-weight: 300;
 }  
 
 .table_view_container{
@@ -49,7 +54,7 @@ a:hover{
 	font-style: bold;
 	padding:.5em;
    font-size: 14px;
-  font-weight: 100;
+  font-weight: 300;
   margin-left:.3em;
   margin-top: .1em;
   padding-left:1em;
@@ -93,6 +98,7 @@ a:hover{
 .module_heading{
 	color:white;
 	background-color: #176777;
+  padding: 10px;
 }
 .count{
 float :right;
@@ -121,5 +127,5 @@ font-size: 14px;
     margin-left: .2em;
     padding: .5em;
     font-size: 14px;
-    font-weight: 100;
+    font-weight: 300;
 }
