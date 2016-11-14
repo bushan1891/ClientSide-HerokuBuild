@@ -27,11 +27,11 @@ renderLinks(){
        <li className="nav-item">
               <Link to="/table" className="nav-link">Table</Link>
        </li>
-        <li className="nav-item pull-xs-right">
+        <li className="nav-item float-xs-right right">
         <Link to="/signout" className="nav-link" onClick={auth.logout}>Sign out</Link>
         </li> 
-        <li className="nav-item pull-xs-right"> 
-        <Link to="/cart" className="nav-link"><i className="fa fa-shopping-cart fa-fw"></i>Cart   {this.renderCartCount()} 
+        <li className="nav-item float-xs-right right"> 
+        <Link to="/cart" className="nav-link"><i className="fa fa-shopping-cart fa-fw"></i>Cart {this.renderCartCount()} 
         </Link>
         </li> 
       </ul>
