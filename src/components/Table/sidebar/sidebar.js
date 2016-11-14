@@ -24,25 +24,25 @@ class SideBar extends Component{
 			<div className={styles.side_container}>
 			<h2 className={styles.module_heading}>WBS-MODULES</h2>
 			<ul className={styles.side_list}>
-				<li className={styles.item}><Link to="/table/create">Create New WBS</Link></li>
-				<li className={styles.item}><Link to="/table/view">View WBS</Link></li>
+				<li className={styles.item}><Link to="/table/create"><button className="btn btn-default customBtn">Create New WBS</button></Link></li>
+				<li className={styles.item}><Link to="/table/view"><button className="btn btn-default customBtn">View WBS</button></Link></li>
 			</ul>
 			<h2 className={styles.module_heading}>SELECTIONS</h2>
 			<ul className={styles.side_list}>
-				<li className={styles.item}><Link to="/cart">Selected Modules</Link>
+				<li className={styles.item}><Link to="/cart"><button className="btn btn-default customBtn">Selected Modules</button></Link>
 				{this.renderCartCount()}
 				</li>
-				<li className={styles.item}><Link to="/view_template">Saved WBS Module</Link></li>
+				<li className={styles.item}><Link to="/view_template"><button className="btn btn-default customBtn">Saved WBS Module</button></Link></li>
 			</ul>
 			<h2 className={styles.module_heading}>CUSTOMER</h2>
 			<ul className={styles.side_list}>
-				<li className={styles.item}><Link to="/account">Create Customer</Link></li>
-				<li className={styles.item}><Link to="/view_account">View Customer</Link></li>
+				<li className={styles.item}><Link to="/account"><button className="btn btn-default customBtn">Create Customer</button></Link></li>
+				<li className={styles.item}><Link to="/view_account"><button className="btn btn-default customBtn">View Customer</button></Link></li>
 			</ul>
 			<h2 className={styles.module_heading}>COLLABARATION</h2>
 			<ul className={styles.side_list}>
-				<li className={styles.item}><Link to="/collabaration">CreateRoom</Link></li>
-				<li className={styles.item}><Link to="/joinroom">JoinRoom</Link></li>
+				<li className={styles.item}><Link to="/collabaration"><button className="btn btn-default customBtn">CreateRoom</button></Link></li>
+				<li className={styles.item}><Link to="/joinroom"><button className="btn btn-default customBtn">JoinRoom</button></Link></li>
 			</ul>
 
 		</div>

@@ -190,3 +190,7 @@ textarea{
 .right{
 float: right !important;
 }
+
+.customBtn{
+    color: white;
+}
