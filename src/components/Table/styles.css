@@ -12,7 +12,8 @@ padding:.2em;
 margin-left: .4em;
 color:white;
 font-weight: 300;
-padding: 5px;
+font-size: 14px;
+padding: 15px;
 }
 .item:hover{
   color:gray;
@@ -98,8 +99,10 @@ a:hover{
 .module_heading{
 	color:white;
 	background-color: #176777;
-  padding: 10px;
+  padding: 15px;
   font-weight: 400;
+  font-size:15px;
+
 }
 .count{
 float :right;

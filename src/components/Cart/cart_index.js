@@ -115,7 +115,7 @@ render(){
 				        </div>
 				        </Link>
 			        </li>
-			        <li className="nav-item pull-xs-right "> 
+			        <li className="nav-item pull-xs-right right"> 
 				        <Link onClick={this.generateWBS.bind(this)} className="nav-link">
 				        <div className={styles.pointer_cursor}>
 				        <i className="fa fa-file-text fa-fw"></i>
@@ -124,7 +124,7 @@ render(){
 				        </Link>
 			        </li> 
 
-			        <li className="nav-item pull-xs-right "> 
+			        <li className="nav-item pull-xs-right  right"> 
 				        <Link onClick={this.generateWBS.bind(this)} className="nav-link">
 				        <div className={styles.pointer_cursor}>
 				        <i className="fa fa-file-word-o fa-fw"></i>
