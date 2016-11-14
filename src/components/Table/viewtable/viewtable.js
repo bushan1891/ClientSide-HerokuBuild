@@ -6,6 +6,7 @@ import {reduxForm} from 'redux-form';
 import { createAction } from 'redux-actions';
 import { POST_TABLE , POST_TABLE_SUCCESSFUL , FETCH_TABLES} from '../types';
 import DisplayList from './displaylist';
+import { browserHistory } from 'react-router';
 
 class ViewTable extends Component {
 
@@ -45,8 +46,14 @@ componentWillMount(){
 }
 
 class ListItemWrapper extends React.Component {
+
+manageTable(){
+	browserHistory.push('/table/view/'+this.props.data._id);
+}
+
+
   render() {
-    return (<div className={styles.flex_item1}>
+    return (<div className={styles.flex_item1} onClick={this.manageTable.bind(this)}>
     			      <h1 className={styles.title}>{_.capitalize(_.truncate(this.props.data.tableName,{'length': 30,
     			          			        'separator': ' '}))}</h1>
 	          			  <div className={styles.details}>
