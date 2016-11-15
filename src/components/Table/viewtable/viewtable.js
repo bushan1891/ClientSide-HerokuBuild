@@ -57,7 +57,7 @@ manageTable(){
     			      <h1 className={styles.title}>{_.toUpper(_.truncate(this.props.data.tableName,{'length': 30,
     			          			        'separator': ' '}))}</h1>
 	          			  <div className={styles.details}>
-	          			  	<lable> Number of Rows :</lable> {this.props.data.tableRowCount} <br/ >
+	          			  	<lable> Number of Modules :</lable> {this.props.data.tableRowCount} <br/ >
 	      					<lable> Number of Rows :</lable> {this.props.data.tableColumnCount} <br/>
 	          			  </div>      
     			      
