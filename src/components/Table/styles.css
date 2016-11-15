@@ -79,8 +79,8 @@ a:hover{
 }
 
 .flex_item1{
-  height: 15em;
-  width: 25em;
+  height: 20em;
+  width: 40em;
   flex-grow: 1;
   background-color: #289ebe;
   padding:10px;
