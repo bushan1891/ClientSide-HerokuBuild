@@ -5,6 +5,7 @@ import {connect} from 'react-redux';
 import {reduxForm} from 'redux-form';
 import { createAction } from 'redux-actions';
 import {FETCH_TEMPLATES} from './types';
+import _ from 'lodash';
 
 class View_Template extends Component {
 
@@ -51,7 +52,7 @@ class ListItemWrapper extends React.Component {
   render() {
     const data = this.props.data;
     return (<div className={styles.flex_item1}>
-    			      <h1 className={styles.title}>{data.templateName}</h1>
+    			      <h1 className={styles.title}>{_.toUpper(data.templateName)}</h1>
                 <div className={styles.details}>
                   <lable>Cart Items : </lable> <span className="">{data.cart.length} </span>
                 </div>

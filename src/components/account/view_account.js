@@ -46,7 +46,7 @@ class ListItemWrapper extends React.Component {
 
   render() {
     return (<div className={styles.flex_item1}  onClick={this.manageAccount.bind(this)}>
-    			      <h1 className={styles.card_heading}>Account Name : {this.props.data.accountName}</h1>
+    			      <h1 className={styles.card_heading}>Account Name : {_.toUpper(this.props.data.accountName)}</h1>
                 <h1 className={styles.card_subtext}>Author : {this.props.data.author}</h1>
                 <h1 className={styles.card_subtext}>Current SOW : {this.props.data.sow.length}</h1>
                 <h1 className={styles.card_subtext}>Created On : {this.props.data.created}</h1>     

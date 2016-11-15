@@ -39,17 +39,19 @@ class SideBar extends Component{
 				<li className={styles.item}><Link to="/account"><button className="btn btn-default customBtn">Create Customer</button></Link></li>
 				<li className={styles.item}><Link to="/view_account"><button className="btn btn-default customBtn">View Customer</button></Link></li>
 			</ul>
-			<h2 className={styles.module_heading}>COLLABARATION</h2>
-			<ul className={styles.side_list}>
-				<li className={styles.item}><Link to="/collabaration"><button className="btn btn-default customBtn">CreateRoom</button></Link></li>
-				<li className={styles.item}><Link to="/joinroom"><button className="btn btn-default customBtn">JoinRoom</button></Link></li>
-			</ul>
+			 
 
 		</div>
 			)
 		
 	}
 }
+
+// <h2 className={styles.module_heading}>COLLABARATION</h2>
+// 			<ul className={styles.side_list}>
+// 				<li className={styles.item}><Link to="/collabaration"><button className="btn btn-default customBtn">CreateRoom</button></Link></li>
+// 				<li className={styles.item}><Link to="/joinroom"><button className="btn btn-default customBtn">JoinRoom</button></Link></li>
+// 			</ul> 
 
 function mapStateToProps(state){
 	return{

@@ -54,7 +54,7 @@ manageTable(){
 
   render() {
     return (<div className={styles.flex_item1} onClick={this.manageTable.bind(this)}>
-    			      <h1 className={styles.title}>{_.capitalize(_.truncate(this.props.data.tableName,{'length': 30,
+    			      <h1 className={styles.title}>{_.toUpper(_.truncate(this.props.data.tableName,{'length': 30,
     			          			        'separator': ' '}))}</h1>
 	          			  <div className={styles.details}>
 	          			  	<lable> Number of Rows :</lable> {this.props.data.tableRowCount} <br/ >
