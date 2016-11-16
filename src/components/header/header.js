@@ -3,6 +3,7 @@ import {connect } from 'react-redux';
 import { Link } from 'react-router';
 import styles from './styles.css';
 import AuthService from '../../utils/AuthService'
+//import logo  from './JCS_logo_white_3000.png'
 class Header extends React.Component {
 
   renderCartCount(){
@@ -56,7 +57,7 @@ renderLinks(){
       <nav className="navbar nav" >
         
         <ul className="nav navbar-nav">
-        <li className="nav-item"><img className={styles.logo}src="./style/JCS_logo_white_3000.png" alt="" /></li>
+        <li className="nav-item"><img className={styles.logo} src={require("./JCS_logo_white_3000.png")} alt="" /></li>
           {this.renderLinks()}
         </ul>
       </nav>
