@@ -104,7 +104,7 @@ render(){
 
 	return(
 		<div className="">
-		<div className={styles.title}>Current Cart Elements </div>
+		<div className={styles.title}>Current Selected Elements </div>
 			<div className={styles.sub_nav}>
 			<ul className="nav navbar-nav navbar-right">
 					<li className="nav-item"> 
@@ -119,7 +119,7 @@ render(){
 				        <Link onClick={this.generateWBS.bind(this)} className="nav-link">
 				        <div className={styles.pointer_cursor}>
 				        <i className="fa fa-file-text fa-fw"></i>
-				        GenerateWBS
+				        Generate WBS
 				        </div>
 				        </Link>
 			        </li> 
@@ -128,7 +128,7 @@ render(){
 				        <Link onClick={this.generateWBS.bind(this)} className="nav-link">
 				        <div className={styles.pointer_cursor}>
 				        <i className="fa fa-file-word-o fa-fw"></i>
-				        GenerateSOW
+				        Generate SOW
 				        </div>
 				        </Link>
 			        </li> 

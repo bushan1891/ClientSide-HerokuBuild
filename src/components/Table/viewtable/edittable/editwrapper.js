@@ -7,6 +7,7 @@ import EditTable from './edittable';
 import SweetAlert from 'sweetalert-react';
 import {createAction} from 'redux-actions';
 import {CART_ITEM , NEW_CART_ITEM} from './types';
+import _ from 'lodash';
 
 class EditWrapper extends Component{	
 
@@ -28,7 +29,7 @@ for(var t in this.props.table ){
 		if(this.props.params.id==this.props.table[t]._id){
 			return (
 			      <div className={styles.editable_container}>
-               <div className={styles.title_table}>{this.props.table[t].tableName}</div> 
+               <div className={styles.title_table}>{_.toUpper(this.props.table[t].tableName)}</div> 
 			         <EditTable data={this.props.table[t]} onSave={this.saveNewTable.bind(this)}/ >
 			      </div>
     			);

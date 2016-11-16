@@ -12,4 +12,12 @@
     font-size: 1.8em;
     font-style: normal;
     border: 1px solid #289ebe;
+    padding: 5px;
+}
+
+.selectedText{
+	padding: 5px;
+    float: right;
+    font-size: inherit;
+    font-weight: 500;
 }

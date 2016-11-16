@@ -49,7 +49,7 @@ var EditTable = React.createClass({
           <br />
           <br />
           <br />
-          <span>{this.state.selectedIndexes.length} {rowText} selected</span>
+          <span className={styles.selectedText}>{this.state.selectedIndexes.length} {rowText} selected</span>
           <button type="submit" className="btn btn-primary" onClick={this.newSavedTable}>Save</button>
       </div>);
   }

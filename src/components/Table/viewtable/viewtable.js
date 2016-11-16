@@ -61,8 +61,8 @@ manageTable(){
 	      					<lable> Number of Rows :</lable> {this.props.data.tableColumnCount} <br/>
 	          			  </div>      
     			      
-    			     <button className="btn btn-default edit_button">
-    			      <Link to ={`/table/view/${this.props.data._id}`}><i className="fa fa-pencil fa-fw"></i>Edit</Link>
+    			     <button className="btn btn-default edit_button ">
+    			      <Link to ={`/table/view/${this.props.data._id}`}><span className={styles.black}><i className="fa fa-pencil fa-fw "></i>Edit</span></Link>
     			     </button>
     			     
     		</div>);

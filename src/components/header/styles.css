@@ -14,3 +14,9 @@ width:1em;
 font-size: 14px;
 padding-left: 3px;
 }
+
+.logo{
+	display: inline;
+    width: 5em;
+    margin-right: 1em;
+}

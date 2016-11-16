@@ -31,7 +31,7 @@ renderLinks(){
         <Link to="/signout" className="nav-link" onClick={auth.logout}>Sign out</Link>
         </li> 
         <li className="nav-item float-xs-right right"> 
-        <Link to="/cart" className="nav-link"><i className="fa fa-shopping-cart fa-fw"></i>Cart {this.renderCartCount()} 
+        <Link to="/cart" className="nav-link"><i className="fa fa-shopping-cart fa-fw"></i>Selections {this.renderCartCount()} 
         </Link>
         </li> 
       </ul>
@@ -54,8 +54,9 @@ renderLinks(){
   render(){
     return (
       <nav className="navbar nav" >
-        <Link to="/" className="navbar-brand" >JCS</Link>
+        
         <ul className="nav navbar-nav">
+        <li className="nav-item"><img className={styles.logo}src="./style/JCS_logo_white_3000.png" alt="" /></li>
           {this.renderLinks()}
         </ul>
       </nav>
