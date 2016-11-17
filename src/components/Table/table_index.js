@@ -44,7 +44,10 @@ renderInstruction(){
 					</div>	
 					<div className="col-md-9 right_sidebar">
 							{this.renderInstruction()}	
-							{this.props.children}	
+							{this.props.children}
+							<div className={styles.emptyspace}>
+
+							</div>	
 					</div>
 				</div>
 			</div>

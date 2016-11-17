@@ -162,12 +162,12 @@ console.log('before ' , Currentaccount);
 			{obj.templateName} | 
 			<a className={styles.button} onClick={boundSow}>
 				<i className="fa fa-file-word-o fa-fw"></i>
-	        GenerateSOW  
+	        Generate SOW  
 			</a>
 								|
 			<a className={styles.button} onClick={boundWbs}>
 				<i className="fa fa-file-text fa-fw"></i>
-	        GenerateWBS
+	        Generate WBS
 			</a>
 								|
 

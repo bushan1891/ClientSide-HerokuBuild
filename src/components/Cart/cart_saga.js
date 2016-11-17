@@ -52,23 +52,24 @@ export function* createTemplate(action) {
 	   // construct the template json
 		if(!(_.isEmpty(table))){
 			var found=0;
-				cart.forEach(function(item){
-					
-					for(var x in table){
-						const str1 = table[x]._id;
-						const str2 = item._id;
-						if(str1 == str2){
-							console.log(str1,' same',str2 );
-							found++;
-						}
-						else if ((!(str1 == str2))&& (found!=cart.length) ){
-							console.log(str1,' not same',str2);
-							otherItem.push(table[x]);
-						}
-					}
 
-				})
-		console.log('before applying uniqe',otherItem);
+			for(var x in table){
+
+				const tableId = table[x]._id;
+
+					cart.forEach(function(item){
+						const casrtId = item._id;
+						if(tableId==casrtId){
+							found=1;
+						}
+					});
+
+					if(found==0){
+						otherItem.push(table[x]);
+					}
+				found=0;
+			}	
+			console.log('other items ',otherItem);
 
 		}
 		else{
