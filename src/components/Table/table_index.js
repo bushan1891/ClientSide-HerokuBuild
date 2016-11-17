@@ -5,6 +5,34 @@ import SideBar from './sidebar/sidebar';
 import {createAction} from 'redux-actions';
 
 class Table extends Component {
+
+
+renderInstruction(){
+	if(!this.props.children){
+
+	return (
+		<div className={styles.instructionContainer}>
+			<h1 className={styles.title}>Instruction</h1>
+				<ul className={styles.bodyContainer}>
+					<li className={styles.detail}>Create Customer</li>
+					<li className={styles.detail}>Create WBS template OR select from available list of WBS</li>
+					<li className={styles.detail}>Review you'r Selections </li>
+					<li className={styles.detail}>Save your selection as template</li>
+					<li className={styles.detail}>Assign your template to a customer</li>
+					<li className={styles.detail}>Generate Your WBS</li>
+				</ul>			
+	
+		</div>
+		)	
+	}
+	else{
+		return (
+			<div></div>
+		)
+	}
+}
+
+
 	render(){
 		console.log('called at index table');
 		this.props.auth0_authenticate();
@@ -15,7 +43,8 @@ class Table extends Component {
 						<SideBar />
 					</div>	
 					<div className="col-md-9 right_sidebar">
-						{this.props.children}	
+							{this.renderInstruction()}	
+							{this.props.children}	
 					</div>
 				</div>
 			</div>
