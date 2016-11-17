@@ -7,6 +7,7 @@ import Cart_Edit from './cart-edit';
 import {Link} from 'react-router';
 import {CREATEWBS} from './types';
 import { createAction } from 'redux-actions';
+import ReactTooltip from 'react-tooltip';
 class Cart_Index extends Component{
 
 renderTable(table){
@@ -108,7 +109,7 @@ render(){
 			<div className={styles.sub_nav}>
 			<ul className="nav navbar-nav navbar-right">
 					<li className="nav-item"> 
-				        <Link onClick={this.saveAsTemplate.bind(this)} className="nav-link">
+				        <Link data-tip="Saves this configuration as a template ,<br /> which can be assigned to a customer " onClick={this.saveAsTemplate.bind(this)} className="nav-link">
 				        <div className={styles.pointer_cursor}>
 				        <i className="fa fa-file-text fa-fw"></i>
 				        Save Template
@@ -116,7 +117,7 @@ render(){
 				        </Link>
 			        </li>
 			        <li className="nav-item pull-xs-right right"> 
-				        <Link onClick={this.generateWBS.bind(this)} className="nav-link">
+				        <Link data-tip="Need to replace this text !!!" onClick={this.generateWBS.bind(this)} className="nav-link">
 				        <div className={styles.pointer_cursor}>
 				        <i className="fa fa-file-text fa-fw"></i>
 				        Generate WBS
@@ -125,12 +126,13 @@ render(){
 			        </li> 
 
 			        <li className="nav-item pull-xs-right  right"> 
-				        <Link onClick={this.generateWBS.bind(this)} className="nav-link">
+				        <Link data-tip="Generates a excel sheet <br /> with your selected items" onClick={this.generateWBS.bind(this)} className="nav-link">
 				        <div className={styles.pointer_cursor}>
 				        <i className="fa fa-file-word-o fa-fw"></i>
 				        Generate SOW
 				        </div>
 				        </Link>
+				        <ReactTooltip place="bottom" type="dark" effect="float" multiline="ture"/>
 			        </li> 
 		       </ul>
 			</div>

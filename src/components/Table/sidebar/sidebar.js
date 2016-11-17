@@ -24,8 +24,8 @@ class SideBar extends Component{
 			<div className={styles.side_container}>
 			<h2 className={styles.module_heading}>WBS-MODULES</h2>
 			<ul className={styles.side_list}>
-				<li className={styles.item}><Link to="/table/create"><button className="btn btn-default customBtn">Create New WBS</button></Link></li>
-				<li className={styles.item}><Link to="/table/view"><button className="btn btn-default customBtn">View WBS</button></Link></li>
+				<li className={styles.item}><Link to="/table/create"><button className="btn btn-default customBtn">Create New WBS Template</button></Link></li>
+				<li className={styles.item}><Link to="/table/view"><button className="btn btn-default customBtn">View WBS Modules</button></Link></li>
 			</ul>
 			<h2 className={styles.module_heading}>SELECTIONS</h2>
 			<ul className={styles.side_list}>

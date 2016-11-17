@@ -181,8 +181,8 @@ margin-top: 3em;
 }
 
 .btn{
-    font-weight: 100 !important;
-    font-size: 10px;
+  font-weight: 500 !important;
+    font-size: 15px;
 }
 textarea{
     width: 100% !important;
@@ -193,10 +193,13 @@ textarea{
 .customBtn{
     color: black;
     font-size: 15px;
-    width: 13em;
+    width: 16em;
     font-weight: 300;
     letter-spacing: 1px;
 }
 .black{
 color:black;
+}
+span > div{
+    font-size: 15px;
 }

@@ -54,7 +54,7 @@ class ListItemWrapper extends React.Component {
     return (<div className={styles.flex_item1}>
     			      <h1 className={styles.title}>{_.toUpper(data.templateName)}</h1>
                 <div className={styles.details}>
-                  <lable>Cart Items : </lable> <span className="">{data.cart.length} </span>
+                  <lable className={styles.lable}>Cart Items : </lable> <span className="">{data.cart.length} </span>
                 </div>
     			     
     		</div>);

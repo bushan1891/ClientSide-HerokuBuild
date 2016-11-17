@@ -240,9 +240,9 @@ console.log('before ' , Currentaccount);
 				<div className={styles.manage_container}>
 					<div className={styles.title}>Manage Account</div>
 						<div className={styles.detail_container}>
-						<div className={styles.item}><strong className={styles.lable}>Account Name:</strong>{Currentaccount.accountName}</div>
-						<div className={styles.item}><strong className={styles.lable}>Account Author:</strong>{Currentaccount.author}</div>
-						<div className={styles.item}><strong className={styles.lable}>Account Created:</strong>{Currentaccount.created}</div>
+						<div className={styles.item}><strong className={styles.lable}>Account Name:</strong>{_.toUpper(Currentaccount.accountName)}</div>
+						<div className={styles.item}><strong className={styles.lable}>Account Author:</strong>{_.toUpper(Currentaccount.author)}</div>
+						<div className={styles.item}><strong className={styles.lable}>Account Created:</strong>{_.toUpper(Currentaccount.created)}</div>
 						<div className={styles.item}><strong className={styles.lable}>Account SOW: </strong> {this.renderSOW()}</div>
 						
 						<div className={styles.item}><strong className={styles.lable}>Available Templates</strong>{this.renderDropdown()}</div>
