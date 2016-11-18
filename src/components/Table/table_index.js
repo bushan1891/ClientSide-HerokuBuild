@@ -39,7 +39,7 @@ renderInstruction(){
 					<li className={styles.detail}><div className={styles.title}>Step 3 : Review you'r Selections </div> 
 					<div className={styles.details}><p>
 						Once you add appropriate modules to your selection you will be able to save it as template 
-					    or Genrate WBS / Genrate SOW  <br/>
+					    or Genrate SOW  <br/>
 					     Click  <Link className={styles.link} to="/cart">here</Link>
 					    </p></div>
 					</li>

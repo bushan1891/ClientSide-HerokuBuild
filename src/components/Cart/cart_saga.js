@@ -1,6 +1,6 @@
 import { take, call, select, fork, put } from 'redux-saga/effects';
 import { createAction } from 'redux-actions';
-import { CREATEWBS ,SAVE_AS_TEMPLATE , SAVE_AS_TEMPLATE_COMPLETE} from './types';
+import { CREATEWBS ,SAVE_AS_TEMPLATE , SAVE_AS_TEMPLATE_COMPLETE,DELETE_TEMPLATE,FETCH_TEMPLATES } from './types';
 import request from '../../utils/request';
 import {selectGlobal} from '../../selectors';
 import _ from 'lodash';
@@ -100,6 +100,26 @@ export function* createTemplate(action) {
 		console.log(res);
 }	
 
+export function* deleteTemplate(action) {
+	console.log('action payload' , action);
+		const config = yield select(getConfig);
+		const api = config.serverUrl;
+		const requestUrl = `${api}template/${action.payload}`
+		const jwt = localStorage.getItem('token');
+		const requestOptions = {
+			method:'delete',
+			headers:{
+				'Authorization' : `${jwt}`
+			}
+		}
+	    const res =yield call(request, requestUrl, requestOptions);
+	        // call create action  
+	        yield put(createAction(FETCH_TEMPLATES)());
+	        location.reload();
+}
+
+
+
 
 
 export function* cartWatcher(){
@@ -116,10 +136,17 @@ export function* templateWatcher(){
 	}
 }
 
+export function* templateDeleteWatcher(){
+	while(true){
+		const action = yield take(DELETE_TEMPLATE);
+		yield call(deleteTemplate,action);
+	}
+}
 
 export function* cartExport(){
   yield fork(cartWatcher);
   yield fork(templateWatcher);
+  yield fork(templateDeleteWatcher);
 }
 
 export default [

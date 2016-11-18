@@ -116,14 +116,7 @@ render(){
 				        </div>
 				        </Link>
 			        </li>
-			        <li className="nav-item pull-xs-right right"> 
-				        <Link data-tip="Need to replace this text !!!" onClick={this.generateWBS.bind(this)} className="nav-link">
-				        <div className={styles.pointer_cursor}>
-				        <i className="fa fa-file-text fa-fw"></i>
-				        Generate WBS
-				        </div>
-				        </Link>
-			        </li> 
+			      
 
 			        <li className="nav-item pull-xs-right  right"> 
 				        <Link data-tip="Generates a excel sheet <br /> with your selected items" onClick={this.generateWBS.bind(this)} className="nav-link">
@@ -144,6 +137,15 @@ render(){
 
 	}
 }
+
+  // <li className="nav-item pull-xs-right right"> 
+		// 		        <Link data-tip="Need to replace this text !!!" onClick={this.generateWBS.bind(this)} className="nav-link">
+		// 		        <div className={styles.pointer_cursor}>
+		// 		        <i className="fa fa-file-text fa-fw"></i>
+		// 		        Generate WBS
+		// 		        </div>
+		// 		        </Link>
+		// 	        </li> 
 
 function mapDispatchToProps(dispatch){
 return{

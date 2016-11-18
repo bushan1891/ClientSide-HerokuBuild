@@ -75,3 +75,8 @@ width:100%;
 .lable{
   
 }
+
+.deleteBtn{
+  display: block;
+  margin-top: 6em;
+}

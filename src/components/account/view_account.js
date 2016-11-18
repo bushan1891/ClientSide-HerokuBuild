@@ -20,10 +20,11 @@ componentWillMount(){
     console.log('view account',this.props.account);
 		if(this.props.account.length>0){
 	     const accounts = this.props.account;
+       const deleteAccount = this.props.deleteAccount;
        return(<div className="">
           <div className={styles.title}>View Account</div>
           <div className={styles.flex_container}>
-              {accounts.map((obj)=>(<ListItemWrapper key={obj._id} data={obj}>
+              {accounts.map((obj)=>(<ListItemWrapper key={obj._id} data={obj} deleteAccount={deleteAccount}>
                                     </ListItemWrapper>))}
        </div>
         </div>)
@@ -43,21 +44,25 @@ class ListItemWrapper extends React.Component {
   manageAccount(){
   browserHistory.push('/account/'+this.props.data._id);
 }
-
+deleteAccount(){
+  this.props.deleteAccount(this.props.data._id);
+}
   render() {
-    return (<div className={styles.flex_item1}  onClick={this.manageAccount.bind(this)}>
+    return (<div className={styles.flex_item1}  >
     			      <h1 className={styles.card_heading}>Account Name : {_.toUpper(this.props.data.accountName)}</h1>
                 <h1 className={styles.card_subtext}>Author : {this.props.data.author}</h1>
                 <h1 className={styles.card_subtext}>Current SOW : {this.props.data.sow.length}</h1>
                 <h1 className={styles.card_subtext}>Created On : {this.props.data.created}</h1>     
 
-               <button className="btn btn-default">Add</button>     
+               <button className="btn btn-default" onClick={this.manageAccount.bind(this)}>Manage Customer</button>
+               <button className="btn btn-default" onClick={this.deleteAccount.bind(this)}>Delete Customer</button>        
     		</div>);
   }
 }
 function mapDispatchToProps(dispatch) {
   return {
   	fetchAccount: ()=>dispatch(createAction(FETCH_ACCOUNT)() ),
+    deleteAccount: (id)=>dispatch(createAction(DELETE_ACCOUNT)(id)),
     dispatch,
   }
 }

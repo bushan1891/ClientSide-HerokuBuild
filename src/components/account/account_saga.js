@@ -91,6 +91,28 @@ export function* updateAccount(action){
 
 }
 
+export function* deleteAccount(action){
+	console.log('deleteAccount  ', action);
+alert('hi');
+		const config = yield select(getConfig);
+		const api = config.serverUrl;
+		const requestUrl = `${api}account/${action.payload}`
+		const jwt = localStorage.getItem('token');
+		const requestOptions = {
+			method:'delete',
+			headers:{
+				'Authorization' : `${jwt}`
+			}
+		}
+	 
+	 const res = yield call(request,requestUrl,requestOptions);
+	 // call account fetch here
+
+	 location.reload();
+
+}
+
+
 
  export function* accountCreateWatcher(){
 	while(true){
@@ -120,11 +142,18 @@ export function* accountUpdateWatcher(){
 	}
 }
 
+export function* accountDeleteWatcher(){
+	while(true){
+		const action = yield take(DELETE_ACCOUNT);
+		yield call(deleteAccount,action);
+	}
+}
 
 
 export function* accountSaga(){
   yield fork(accountCreateWatcher);
   yield fork(accountFetchWatcher);
+  yield fork(accountDeleteWatcher);
   yield fork(templateFetchWatcher);
   yield fork(accountUpdateWatcher);
 }
