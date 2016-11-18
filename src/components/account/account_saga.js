@@ -93,7 +93,6 @@ export function* updateAccount(action){
 
 export function* deleteAccount(action){
 	console.log('deleteAccount  ', action);
-alert('hi');
 		const config = yield select(getConfig);
 		const api = config.serverUrl;
 		const requestUrl = `${api}account/${action.payload}`
