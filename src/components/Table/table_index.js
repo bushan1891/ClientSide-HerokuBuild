@@ -3,6 +3,7 @@ import styles from './styles.css';
 import {connect} from 'react-redux';
 import SideBar from './sidebar/sidebar';
 import {createAction} from 'redux-actions';
+import {Link }from 'react-router';
 
 class Table extends Component {
 
@@ -14,12 +15,39 @@ renderInstruction(){
 		<div className={styles.instructionContainer}>
 			<h1 className={styles.title}>Instruction</h1>
 				<ul className={styles.bodyContainer}>
-					<li className={styles.detail}>Create Customer</li>
-					<li className={styles.detail}>Create WBS template OR select from available list of WBS</li>
-					<li className={styles.detail}>Review you'r Selections </li>
-					<li className={styles.detail}>Save your selection as template</li>
-					<li className={styles.detail}>Assign your template to a customer</li>
-					<li className={styles.detail}>Generate Your WBS</li>
+					<li className={styles.detail}>
+					<div className={styles.title}>Step 1 : Create Customer</div>
+					<div className={styles.details}><p>
+						Create a new customer ?<br/>
+						   ->  Click  <Link className={styles.link} to="/account">here</Link><br/>
+						View all Customers ?<br/>
+						   ->  Click  <Link className={styles.link} to="/view_account">here</Link>
+					</p></div>
+
+
+					</li>
+					<li className={styles.detail}>
+						<div className={styles.title}>Step 2 : Create WBS template OR select from available list of WBS 
+						</div>
+						<div className={styles.details}><p>
+						Create a new WBS template ?<br/>
+						   ->  Click  <Link className={styles.link} to="/table/create">here</Link><br/>
+						View all WBS templates?<br/>
+						   ->  Click  <Link className={styles.link} to="/table/view">here</Link>
+					</p></div>
+					</li>
+					<li className={styles.detail}><div className={styles.title}>Step 3 : Review you'r Selections </div> 
+					<div className={styles.details}><p>
+						Once you add appropriate modules to your selection you will be able to save it as template 
+					    or Genrate WBS / Genrate SOW  <br/>
+					     Click  <Link className={styles.link} to="/cart">here</Link>
+					    </p></div>
+					</li>
+					<li className={styles.detail}><div className={styles.title}>Step 4 : View And Manage your account</div>
+						<div className={styles.details}><p>
+						Click  <Link className={styles.link} to="/cart">here</Link> to navigate to Manage account 
+						 </p></div>
+					</li>
 				</ul>			
 	
 		</div>
