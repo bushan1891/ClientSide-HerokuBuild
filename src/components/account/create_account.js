@@ -19,7 +19,7 @@ class CreateAccount extends Component{
 	render(){
 		const { handleSubmit,fields:{ accountName,author} } = this.props;
 		return (	<div className={styles.createAccount_container}>
-						<div className={styles.title}>Create Account</div>
+						<div className={styles.title}>Create Customer</div>
 					<form  className={styles.create_account_form} onSubmit={handleSubmit(this.handleFormSubmit.bind(this))}>
 						<fieldset className="form-group">
 						<lable className="form-label">Customer Name</lable>
@@ -31,7 +31,7 @@ class CreateAccount extends Component{
 						<input type="text" className="form-control" {...author}/>
 						{author.touched && author.error&& <div className="alert alert-danger">Author Error</div>}
 						</fieldset>
-						<button type="Submit" className="btn btn-default button">CreateAccount</button>
+						<button type="Submit" className="btn btn-default button">Create Customer</button>
 					</form>
 			</div>
 			)
