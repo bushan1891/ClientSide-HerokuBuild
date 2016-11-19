@@ -15,17 +15,21 @@ renderInstruction(){
 		<div className={styles.instructionContainer}>
 			<h1 className={styles.title}>Instruction</h1>
 
-			<div className={styles.iframe}> 
-					
-				<h1 className={styles.title}>How to use the JCSEstimate App ?</h1>
-				<iframe src="https://jcsconsultingdemo.app.box.com/embed/s/d23qrds410evx3n4sykcykweuy7aa1f4" width="1040" height="400" frameborder="0" allowfullscreen webkitallowfullscreen msallowfullscreen></iframe>
-				
+			<div className={styles.bodyContainer}>
+				<div className={styles.iframe}> 		
+					<h1 className={styles.title}>How to use JCSEstimate App ?</h1>
+					<iframe src="https://jcsconsultingdemo.app.box.com/embed/s/d23qrds410evx3n4sykcykweuy7aa1f4" width="1040" height="550" frameborder="0" allowfullscreen webkitallowfullscreen msallowfullscreen></iframe>
+				</div>
 			</div>
-				<div className={styles.title}>
-					For Detailed steps please go to link 
-					<a href="https://jcsconsulting.jiveon.com/docs/DOC-17276"></a>
-				</div>		
 			
+
+			<div className={styles.bodyContainer}>
+				<div className={styles.title}>
+						For Detailed steps please go to link 
+						<a href="https://jcsconsulting.jiveon.com/docs/DOC-17276">JcsEstimate</a>
+				</div>		
+			</div>
+				
 				<ul className={styles.bodyContainer}>
 					<li className={styles.detail}>
 					<div className={styles.title}>Step 1 : Create Customer</div>
