@@ -15,19 +15,10 @@ renderInstruction(){
 		<div className={styles.instructionContainer}>
 			<h1 className={styles.title}>Instruction</h1>
 
-			<div className={styles.bodyContainer}>
 				<div className={styles.iframe}> 		
 					<iframe src="https://jcsconsultingdemo.box.com/s/d23qrds410evx3n4sykcykweuy7aa1f4" width="1040" height="550" frameborder="0" allowfullscreen webkitallowfullscreen msallowfullscreen></iframe>
 				</div>
-			</div>
 			
-
-			<div className={styles.bodyContainer}>
-				<div className={styles.title}>
-						For Detailed steps please go to link 
-						<a href="https://jcsconsulting.jiveon.com/docs/DOC-17276"><div className={styles.link}>JCSEstimate</div></a>
-				</div>		
-			</div>
 				
 				<ul className={styles.bodyContainer}>
 					<li className={styles.detail}>
@@ -62,6 +53,11 @@ renderInstruction(){
 						<div className={styles.details}><p>
 						Click  <Link className={styles.link} to="/cart">here</Link> to navigate to Manage account 
 						 </p></div>
+
+						 	<div className={styles.title}>
+						For Detailed steps please go to link 
+						<a href="https://jcsconsulting.jiveon.com/docs/DOC-17276"><div className={styles.link}>JCSEstimate</div></a>
+				</div>	
 					</li>
 				</ul>			
 	
