@@ -17,7 +17,7 @@ renderInstruction(){
 
 			<div className={styles.bodyContainer}>
 				<div className={styles.iframe}> 		
-					<iframe src="https://jcsconsultingdemo.app.box.com/embed/s/d23qrds410evx3n4sykcykweuy7aa1f4" width="1040" height="550" frameborder="0" allowfullscreen webkitallowfullscreen msallowfullscreen></iframe>
+					<iframe src="https://jcsconsultingdemo.box.com/s/d23qrds410evx3n4sykcykweuy7aa1f4" width="1040" height="550" frameborder="0" allowfullscreen webkitallowfullscreen msallowfullscreen></iframe>
 				</div>
 			</div>
 			
