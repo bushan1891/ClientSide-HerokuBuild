@@ -2,7 +2,7 @@ import React , {Component} from 'react';
 import ReactDataGrid from 'react-data-grid';
 import styles from './styles.css';
 import {connect} from 'react-redux';
-
+import { Link} from 'react-router';
 //helper to generate a random date
 var EditTable = React.createClass({
 
@@ -51,6 +51,8 @@ var EditTable = React.createClass({
           <br />
           <span className={styles.selectedText}>{this.state.selectedIndexes.length} {rowText} selected</span>
           <button type="submit" className="btn btn-primary" onClick={this.newSavedTable}>Save</button>
+          <button type="submit" className="btn btn-primary" ><Link to="/table/view">Back</Link></button>
+          
       </div>);
   }
 });

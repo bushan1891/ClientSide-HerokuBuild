@@ -172,3 +172,7 @@ padding :2em;
     align-items: center;
     padding: 0px;
 }
+.step{
+  color:black;
+  font-weight: 500;
+}
