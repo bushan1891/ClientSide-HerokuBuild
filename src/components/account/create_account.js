@@ -22,12 +22,12 @@ class CreateAccount extends Component{
 						<div className={styles.title}>Create Account</div>
 					<form  className={styles.create_account_form} onSubmit={handleSubmit(this.handleFormSubmit.bind(this))}>
 						<fieldset className="form-group">
-						<lable className="form-label">Account Name</lable>
+						<lable className="form-label">Customer Name</lable>
 						<input type="text" className="form-control" {...accountName}/>
 						{accountName.touched && accountName.error&& <div className="alert alert-danger">AccountName Error</div>}
 						</fieldset>
 						<fieldset className="form-group">
-						<lable className="form-label">Account Owner</lable>
+						<lable className="form-label">Owner</lable>
 						<input type="text" className="form-control" {...author}/>
 						{author.touched && author.error&& <div className="alert alert-danger">Author Error</div>}
 						</fieldset>
