@@ -17,7 +17,7 @@ renderInstruction(){
 
 			<div className={styles.bodyContainer}>
 				<div className={styles.iframe}> 		
-					<h1 className={styles.title}>How to use JCSEstimate App ?</h1>
+					
 					<iframe src="https://jcsconsultingdemo.app.box.com/embed/s/d23qrds410evx3n4sykcykweuy7aa1f4" width="1040" height="550" frameborder="0" allowfullscreen webkitallowfullscreen msallowfullscreen></iframe>
 				</div>
 			</div>
@@ -26,7 +26,7 @@ renderInstruction(){
 			<div className={styles.bodyContainer}>
 				<div className={styles.title}>
 						For Detailed steps please go to link 
-						<a href="https://jcsconsulting.jiveon.com/docs/DOC-17276">JcsEstimate</a>
+						<a href="https://jcsconsulting.jiveon.com/docs/DOC-17276"><div className={styles.link}>JCSEstimate</div></a>
 				</div>		
 			</div>
 				

@@ -163,7 +163,8 @@ padding :2em;
   height:50px;
 }
 .link{
-  color:blue;
+  color:black;
+  font-weight: 500;
 }
 .iframe{
   
