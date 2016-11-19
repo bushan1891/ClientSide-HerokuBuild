@@ -16,7 +16,7 @@ renderInstruction(){
 			<h1 className={styles.title}>Instruction</h1>
 
 			<div className={styles.iframe}>
-				<iframe src="https://jcsconsultingdemo.app.box.com/embed/s/jmlb96y0euypgrzze5cxxz29b4twyjcd" width="800" height="550" frameborder="0" allowfullscreen webkitallowfullscreen msallowfullscreen></iframe>
+				<iframe src="https://jcsconsultingdemo.app.box.com/embed/s/jmlb96y0euypgrzze5cxxz29b4twyjcd" width="1000" height="550" frameborder="0" allowfullscreen webkitallowfullscreen msallowfullscreen></iframe>
 				
 			</div>
 
