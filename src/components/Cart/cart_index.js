@@ -34,7 +34,7 @@ const cart =this.props.cart;
 	         showCancelButton: true, 
 	         closeOnConfirm: false, 
              animation: "slide-from-top",
-             inputPlaceholder: "Write something" },
+             inputPlaceholder: "{CompanyName} - SOW {Number} - {ModuleName}" },
       function(inputValue){
              if (inputValue === false)
 	                  return false;      
@@ -67,10 +67,10 @@ generateWBS(){
 	const createWBS=this.props.createWBS;
 	if(this.props.cart.table.length>0){
 		swal({   title: "An input!",  
-		 text: "Write something interesting:", 
+		 text: "", 
 		 type: "input",   showCancelButton: true,   
 		 closeOnConfirm: false,   animation: "slide-from-top",  
-		 inputPlaceholder: "Enter WBS Name" },
+		 inputPlaceholder: "{CompanyName} - SOW {Number} - {ModuleName}" },
 		     
 		  function(inputValue){   
 		      if (inputValue === false) 
